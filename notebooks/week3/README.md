@@ -1,11 +1,17 @@
 # Week 3 - Data fix & Environment Setup
 
-<ins> Objective </ins>
-- Get dataset loaded correctly and fix issues with torch-geometric dataset download.
-- Ensure environment compatibility (torch + pyg versions working in Colab).
-- Save processed splits to dataset/NCI1/processed_splits.
+### Overview
+This week was focused on environment debugging, since the original EGSteal pipeline could not run in Colab due to repeated version conflicts with PyTorch, PyG, NumPy, and the TU dataset loader.  
 
-<ins> Files Included </ins>
+Rather than losing a full week blocked on dependency issues, I created a simulated mini-pipeline so I could:  
+- Reproduce the folder structure EGSteal expects
+- Test the downstream training scripts
+- Generate placeholder .pt files and JSON result summaries
+- Verify that model training, saving, and result logging all work end-to-end  
+
+This let me validate the workflow logic before moving on to Weeks 4 and 5, where I run the real experiments.  
+
+### Files Included
 - week3_dataFix.ipynb: Colab notebook used for environment setup and data preparation.
 - results_week3.zip: zip of dataset/NCI1/processed_splits.
 
