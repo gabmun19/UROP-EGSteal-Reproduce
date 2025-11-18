@@ -1,6 +1,0 @@
-{
-    "target_acc": 0.93,
-    "surrogate_acc": 0.82,
-    "dataset": "NCI1",
-    "query_ratio": 0.3
-}
