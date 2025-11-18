@@ -22,7 +22,7 @@ However, the TU dataset loader (TUDataset) consistently failed due to:
 Because of this, I switched strategies for Week 3.
 
 ### Files Included
-- week3_dataFix.ipynb: notebook containing all simulated steps
+- week3_sampleTraining.ipynb: notebook containing all simulated steps
 - results_week3.zip: dummy dataset, model weights, and result JSON
 
 ### Summary
