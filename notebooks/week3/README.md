@@ -11,24 +11,30 @@
 
 <ins> Commands I ran in Colab </ins>
 --- uninstall conflicting packages ---
+
 !pip uninstall -y torch torch-geometric torch-scatter torch-sparse torch-cluster torchvision torchaudio
 
 --- install torch that worked for me in Colab ---
+
 !pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0
 
 --- install PyG and required libs (versions that matched torch) ---
+
 !pip install torch-geometric==2.5.3 torch-scatter==2.1.2 torch-sparse==0.6.18 torch-cluster==1.6.3
 
 --- clone repository ---
+
 !git clone https://github.com/beanmah/EGSteal.git
 %cd EGSteal
 
 --- prepare dataset manually (download & unzip) ---
+
 !mkdir -p dataset/NCI1/raw
 !wget -q https://www.chrsmrrs.com/graphkerneldatasets/NCI1.zip -O dataset/NCI1/raw/NCI1.zip
 !unzip -o dataset/NCI1/raw/NCI1.zip -d dataset/NCI1/raw/
 
 --- run data prep ---
+
 !python data_preparation.py --dataset_name NCI1
 
 
