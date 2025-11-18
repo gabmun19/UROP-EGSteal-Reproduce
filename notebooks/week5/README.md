@@ -70,6 +70,4 @@ Week 5 outputs include:
 
 ### Summary
 Week 5 marks the first complete EGSteal reproduction including the real dataset, target model, CAM explanations, query sampling, and surrogate training.
-This brings me close to the experimental setup in the original paper, and prepares me for Week 6, where I can begin side-by-side comparisons between:
-- My reproduced surrogate accuracy
-- The surrogate accuracy reported in the paper
+This brings me close to the experimental setup in the original paper, and prepares me for Week 6, where I can begin side-by-side comparisons between my reproduced surrogate accuracyand the surrogate accuracy reported in the paper.
