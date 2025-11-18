@@ -11,7 +11,7 @@ Rather than losing a full week blocked on dependency issues, I created a simulat
 
 This let me validate the workflow logic before moving on to Weeks 4 and 5, where I run the real experiments. 
 
-## Issues / What I Attempted  
+### Issues / What I Attempted  
 I tried multiple PyTorch / PyG combinations, attempted manual installs, and even tried switching Python versions.
 However, the TU dataset loader (TUDataset) consistently failed due to:
 - PyTorch-Geometric version mismatches
