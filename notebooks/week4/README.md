@@ -28,6 +28,42 @@ Several major blockers from earlier weeks were fully resolved:
 
 This allowed CAM and the whole pipeline to run without exception.
 
+### What Was Accomplished
+1. Dataset Preparation  
+Successfully processed NCI1 into:
+- target_train_dataset.pt
+- target_val_dataset.pt
+- shadow_dataset.pt
+- test_dataset.pt  
+
+2. Target Model Training  
+GIN (3 layers, 128 hidden dims) trained for 200 epochs, producing:
+- Target accuracy
+- Target AUC
+- Saved model weights + metrics  
+
+3. Explanation Extraction  
+Generated CAM explanations over both:
+- shadow dataset
+- test dataset  
+
+4. Surrogate Model Training  
+Trained surrogate GIN using:
+- augmentation_ratio = 0.2
+- operation_ratio = 0.2
+- align_weight = 0.1
+- augmentation_type = combined  
+
+This produced:
+- surrogate model weights
+- surrogate training logs
+- side-by-side relevance scores  
+
 ### Files Included
 - Week4Results.zip
 - Week4_training.ipynb
+
+### Summary
+Week 4 marks the first complete, fully functioning run of EGSteal on Colab. After multiple weeks of dependency failures, this week produced the first real experimental results for both the target and surrogate models.  
+
+These outputs set the stage for Week 5, where I implement the real sampling logic and begin comparing surrogate performance to the results in the published paper.
