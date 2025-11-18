@@ -9,7 +9,7 @@
 - week3_dataFix.ipynb: Colab notebook used for environment setup and data preparation.
 - results_week3.zip: zip of dataset/NCI1/processed_splits.
 
-<ins> Commands I ran in Colab </ins>
+<ins> Commands I ran in Colab </ins>  
 --- uninstall conflicting packages ---
 
 !pip uninstall -y torch torch-geometric torch-scatter torch-sparse torch-cluster torchvision torchaudio
