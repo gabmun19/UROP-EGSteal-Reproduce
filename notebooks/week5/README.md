@@ -57,12 +57,7 @@ The surrogate model now trains on sampled queries (not placeholder data):
 This model attempts to approximate the target GNN’s behavior.
 
 5. Packaged Results  
-Week 5 outputs include:
-- real target model weights
-- real surrogate weights
-- sampled query dataset
-- results JSON for analysis
-- week5_results.zip  
+Week 5 outputs include the real target model weights, real surrogate weights, and the sampled query dataset.
 
 ### Files Included
 - week5_training.ipynb
@@ -70,4 +65,3 @@ Week 5 outputs include:
 
 ### Summary
 Week 5 marks the first complete EGSteal reproduction including the real dataset, target model, CAM explanations, query sampling, and surrogate training.
-This brings me close to the experimental setup in the original paper, and prepares me for Week 6, where I can begin side-by-side comparisons between my reproduced surrogate accuracyand the surrogate accuracy reported in the paper.
