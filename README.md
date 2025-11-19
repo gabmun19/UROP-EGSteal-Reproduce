@@ -4,6 +4,3 @@ Reproducing: Ma, Bin, et al. “How Explanations Leak the Decision Logic: Steali
 
 This repository contains my reproduction work for the Model Extraction Attack and Defense project in which I am working on through Florida State University's Undergraduate Research Program (UROP).
 It includes code, Colab notebooks, and results from weekly experiments (Week 3 — Week 5). The goal is to reproduce the experiments and compare results side-by-side with the paper.
-
-For side by side comparisons:
-See experiment-utils/compare_results.ipynb for code to create comparison tables and plots. The notebook loads results/*.json saved by the experiments and a small YAML/JSON file with paper results to generate a single comparison table and plots.
