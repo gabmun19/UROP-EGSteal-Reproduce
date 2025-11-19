@@ -29,7 +29,7 @@ Several major blockers from earlier weeks were fully resolved:
 This allowed CAM and the whole pipeline to run without exception.
 
 ### What Was Accomplished
-1. Dataset Preparation  
+1. Dataset Preparation    
 Successfully processed NCI1 into:
   - target_train_dataset.pt
   - target_val_dataset.pt
@@ -37,15 +37,10 @@ Successfully processed NCI1 into:
   - test_dataset.pt  
 
 2. Target Model Training  
-GIN (3 layers, 128 hidden dims) trained for 200 epochs, producing:
-  - Target accuracy
-  - Target AUC
-  - Saved model weights + metrics  
+GIN (3 layers, 128 hidden dims) trained for 200 epochs, producing the target accuracy, target AUC as well as saved model weights + metrics.   
 
 3. Explanation Extraction  
-Generated CAM explanations over both:
-  - shadow dataset
-  - test dataset  
+Generated CAM explanations over both the shadow dataset and test dataset.  
 
 4. Surrogate Model Training  
 Trained surrogate GIN using:
@@ -54,10 +49,7 @@ Trained surrogate GIN using:
   - align_weight = 0.1
   - augmentation_type = combined  
 
-This produced:
-  - surrogate model weights
-  - surrogate training logs
-  - side-by-side relevance scores  
+This produced the surrogate model weights, surrogate training logs, and side-by-side relevance scores.  
 
 ### Files Included
 - Week4Results.zip
