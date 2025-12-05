@@ -31,8 +31,6 @@ This table compares the reproduced results against the original target and surro
 
 ## Master Table w/ all Datasets
 
-# Master Results Table — All Datasets
-
 | Dataset | Target Acc | Target AUC | Surrogate Acc | Surrogate AUC | Fidelity | Order Acc | Rank Corr |
 |--------|-------------|------------|----------------|----------------|----------|------------|------------|
 | NCI109 | 0.7321 | 0.8013 | 0.6836 | 0.7529 | 0.7406 | 0.6089 | 0.1983 |
